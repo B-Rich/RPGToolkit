@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <attr name="next" format="reference" />
+    <attr name="type" format="integer|string" />
+
+
+
+    <declare-styleable name="DiceButton">
+        <attr name="next" />
+        <attr name="type" />
+        <attr name="pool" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DieTypeSelector">
+        <attr name="next" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ArrowButton">
+        <attr name="mod" format="integer" />
+        <attr name="ref" format="reference" />
+    </declare-styleable>
+
+</resources>

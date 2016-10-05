@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chalk Dice</string>
+
+    <string name="action_dice_set">Select Mode</string>
+    <string name="action_about_us">Lackwit Studios</string>
+
+</resources>

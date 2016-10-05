@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#181c36</color>
+    <color name="colorPrimaryDark">#131425</color>
+    <color name="colorAccent">#d9d94f</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="yellowChalk">#d9d94f</color>
+
+    <color name="DB_Default">#bdbdbd</color>
+
+    <color name="DB_Crit">#93cf8e</color>
+    <color name="DB_Fail">#774646</color>
+    <color name="DB_Success">#626799</color>
+
+</resources>

@@ -1,0 +1,201 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Die Pool"
+        android:id="@+id/textView8"
+        android:onClick="DieSetSelectorPopup"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/yellowChalk"
+        android:textSize="30dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <com.lackwits.rpgtoolkit.Objects.DieTypeSelector
+                    style="@style/DiceStyle"
+                    android:layout_gravity="center"
+                    android:text="Pool"
+                    android:textColor="@color/yellowChalk"
+                    custom:type="10"
+                    custom:next="@+id/DB1d10"
+                    android:id="@+id/Pool_Selector"
+                    android:background="@mipmap/chalk_square"
+                    android:onClick="changeType"/>
+
+
+                <com.lackwits.rpgtoolkit.Objects.DiceLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="1"
+                        android:id="@+id/DB1d10"
+                        custom:next="@+id/DB2d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="2"
+                        android:id="@+id/DB2d10"
+                        custom:next="@+id/DB3d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="3"
+                        android:id="@+id/DB3d10"
+                        custom:next="@+id/DB4d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="4"
+                        android:id="@+id/DB4d10"
+                        custom:next="@+id/DB5d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="5"
+                        android:id="@+id/DB5d10"
+                        custom:next="@+id/DB6d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="6"
+                        android:id="@+id/DB6d10"
+                        custom:next="@+id/DB7d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="7"
+                        android:id="@+id/DB7d10"
+                        custom:next="@+id/DB8d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="8"
+                        android:id="@+id/DB8d10"
+                        custom:next="@+id/DB9d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="9"
+                        android:id="@+id/DB9d10"
+                        custom:next="@+id/DB10d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="10"
+                        android:id="@+id/DB10d10"
+                        custom:next="@+id/DB11d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="11"
+                        android:id="@+id/DB11d10"
+                        custom:next="@+id/DB12d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="12"
+                        android:id="@+id/DB12d10"
+                        custom:next="@+id/DB13d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="13"
+                        android:id="@+id/DB13d10"
+                        custom:next="@+id/DB14d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="14"
+                        android:id="@+id/DB14d10"
+                        custom:next="@+id/DB15d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="15"
+                        android:id="@+id/DB15d10"
+                        custom:next="@+id/DB16d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="16"
+                        android:id="@+id/DB16d10"
+                        custom:next="@+id/DB17d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="17"
+                        android:id="@+id/DB17d10"
+                        custom:next="@+id/DB18d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="18"
+                        android:id="@+id/DB18d10"
+                        custom:next="@+id/DB19d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="19"
+                        android:id="@+id/DB19d10"
+                        custom:next="@+id/DB20d10" />
+
+                    <com.lackwits.rpgtoolkit.Objects.DiceButton
+                        style="@style/DiceStyle"
+                        android:text="10"
+                        custom:pool="20"
+                        android:id="@+id/DB20d10"
+                        custom:next="@null" />
+
+
+                </com.lackwits.rpgtoolkit.Objects.DiceLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

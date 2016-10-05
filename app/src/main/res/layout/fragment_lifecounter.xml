@@ -1,0 +1,134 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Life Counter"
+        android:textColor="@color/yellowChalk"
+        android:onClick="DieSetSelectorPopup"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:typeface="normal" />
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/circle2"
+        android:layout_below="@+id/RL1"
+        android:layout_weight="0.5"
+        android:rotation="180">
+
+        <com.lackwits.rpgtoolkit.Objects.LifeDisplay
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/LifeDisplay2"
+            android:textColor="@color/DB_Crit"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.lackwits.rpgtoolkit.Objects.ArrowButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/plus_button2"
+            android:background="@android:drawable/arrow_up_float"
+            android:contentDescription="Up Arrow"
+            android:onClick="LifeMod"
+            custom:mod ="1"
+            custom:ref="@+id/LifeDisplay2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.lackwits.rpgtoolkit.Objects.ArrowButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/minus_button2"
+            android:background="@android:drawable/arrow_down_float"
+            android:contentDescription="Down Arrow"
+            android:onClick="LifeMod"
+            custom:mod ="-1"
+            custom:ref="@+id/LifeDisplay2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/circle1"
+        android:layout_below="@+id/textView"
+        android:layout_weight="0.5" >
+
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MagicCircle"
+            android:src="@drawable/circle1"
+            android:adjustViewBounds="true"
+            android:text="20"
+            android:contentDescription="Magic Circle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" /-->
+
+        <com.lackwits.rpgtoolkit.Objects.LifeDisplay
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/LifeDisplay"
+            android:textColor="@color/DB_Crit"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.lackwits.rpgtoolkit.Objects.ArrowButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/plus_button"
+            android:background="@android:drawable/arrow_up_float"
+            android:contentDescription="Up Arrow"
+            android:onClick="LifeMod"
+            custom:mod ="1"
+            custom:ref="@+id/LifeDisplay"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.lackwits.rpgtoolkit.Objects.ArrowButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/minus_button"
+            android:background="@android:drawable/arrow_down_float"
+            android:contentDescription="Down Arrow"
+            android:onClick="LifeMod"
+            custom:mod ="-1"
+            custom:ref="@+id/LifeDisplay"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
